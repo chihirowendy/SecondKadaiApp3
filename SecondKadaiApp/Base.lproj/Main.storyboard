@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -47,13 +48,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="input" destination="8bC-Xf-vdC" id="JnA-5m-eln"/>
                         <outlet property="textField" destination="82b-oM-WtZ" id="TCt-Dj-vwh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+            <point key="canvasLocation" x="39" y="56"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="r2d-m4-Iwv">
@@ -68,23 +68,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lis-Wk-9C7">
-                                <rect key="frame" x="180" y="178" width="58" height="30"/>
+                                <rect key="frame" x="158" y="178" width="58" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="6pt-Wz-l2T" kind="unwind" unwindAction="unwind:" id="CBM-BO-zjV"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JK-uL-dC4">
-                                <rect key="frame" x="188" y="149" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JK-uL-dC4">
+                                <rect key="frame" x="16" y="134" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0JK-uL-dC4" firstAttribute="leading" secondItem="Dyd-iX-g1N" secondAttribute="leadingMargin" id="8lB-d5-NJ3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0JK-uL-dC4" secondAttribute="trailing" id="Rhu-HX-ySQ"/>
+                            <constraint firstItem="0JK-uL-dC4" firstAttribute="top" secondItem="flO-xQ-dyA" secondAttribute="bottom" constant="10" id="cAb-rc-ruh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="0JK-uL-dC4" id="pWq-YX-DcM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D2b-Rh-sGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="6pt-Wz-l2T" userLabel="Exit" sceneMemberID="exit"/>
