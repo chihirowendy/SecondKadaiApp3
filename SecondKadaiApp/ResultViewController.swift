@@ -20,6 +20,7 @@ class ResultViewController: UIViewController {
         
     
         label.text = "こんにちは\(name)さん"
+    
     }
     
     override func didReceiveMemoryWarning() {
