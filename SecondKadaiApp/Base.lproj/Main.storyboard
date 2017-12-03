@@ -22,14 +22,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPE-Zi-2eq">
-                                <rect key="frame" x="26" y="120" width="323" height="128.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTp-f1-CGe">
-                                <rect key="frame" x="26" y="458.5" width="323" height="8.5"/>
+                                <rect key="frame" x="26" y="459" width="323" height="8"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="cW3-d5-peU" kind="show" id="oeB-t1-MBB"/>
@@ -44,6 +38,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPE-Zi-2eq">
+                                <rect key="frame" x="26" y="120" width="323" height="128.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -51,6 +51,7 @@
                             <constraint firstItem="82b-oM-WtZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Wf-ck-Y80"/>
                             <constraint firstItem="82b-oM-WtZ" firstAttribute="top" secondItem="aPE-Zi-2eq" secondAttribute="bottom" constant="120" id="8hb-GG-W29"/>
                             <constraint firstItem="KTp-f1-CGe" firstAttribute="top" secondItem="82b-oM-WtZ" secondAttribute="bottom" constant="200" id="G1c-14-tvx"/>
+                            <constraint firstItem="aPE-Zi-2eq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GYn-Xd-FOd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="82b-oM-WtZ" secondAttribute="trailing" constant="10" id="HZf-cJ-c7k"/>
                             <constraint firstItem="82b-oM-WtZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LBJ-6k-PWi"/>
                             <constraint firstItem="KTp-f1-CGe" firstAttribute="top" secondItem="aPE-Zi-2eq" secondAttribute="bottom" constant="210" id="LGo-FW-MLO"/>
@@ -59,9 +60,11 @@
                             <constraint firstItem="82b-oM-WtZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q3t-m3-uTU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KTp-f1-CGe" secondAttribute="bottom" constant="200" id="RK8-6m-GXu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KTp-f1-CGe" secondAttribute="trailing" constant="10" id="Rkp-c3-sMc"/>
+                            <constraint firstItem="82b-oM-WtZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wvq-kl-2eQ"/>
                             <constraint firstItem="KTp-f1-CGe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YOd-bs-tSM"/>
                             <constraint firstItem="aPE-Zi-2eq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="b5c-Yz-cOo"/>
                             <constraint firstItem="82b-oM-WtZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bpo-jy-zUN"/>
+                            <constraint firstItem="KTp-f1-CGe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d0q-Ju-rIo"/>
                             <constraint firstItem="82b-oM-WtZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="d8H-WC-QNd"/>
                             <constraint firstItem="82b-oM-WtZ" firstAttribute="top" secondItem="aPE-Zi-2eq" secondAttribute="bottom" constant="100" id="dBZ-a6-x53"/>
                             <constraint firstItem="KTp-f1-CGe" firstAttribute="top" secondItem="82b-oM-WtZ" secondAttribute="bottom" constant="50" id="dVl-nh-fcn"/>
@@ -112,12 +115,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="0JK-uL-dC4" firstAttribute="centerX" secondItem="Dyd-iX-g1N" secondAttribute="centerX" id="0VB-6h-P72"/>
                             <constraint firstItem="0JK-uL-dC4" firstAttribute="top" secondItem="flO-xQ-dyA" secondAttribute="bottom" constant="100" id="4mE-0z-AwM"/>
                             <constraint firstItem="Lis-Wk-9C7" firstAttribute="leading" secondItem="Dyd-iX-g1N" secondAttribute="leadingMargin" constant="10" id="6v9-Gn-JVw"/>
                             <constraint firstItem="0JK-uL-dC4" firstAttribute="leading" secondItem="Dyd-iX-g1N" secondAttribute="leadingMargin" id="8lB-d5-NJ3"/>
                             <constraint firstItem="wtp-68-YnG" firstAttribute="top" secondItem="Lis-Wk-9C7" secondAttribute="bottom" constant="200" id="9Oh-Z6-BwN"/>
                             <constraint firstItem="0JK-uL-dC4" firstAttribute="leading" secondItem="Dyd-iX-g1N" secondAttribute="leadingMargin" constant="10" id="Bjf-rW-HWC"/>
                             <constraint firstItem="Lis-Wk-9C7" firstAttribute="centerX" secondItem="Dyd-iX-g1N" secondAttribute="centerX" id="CBa-bU-0Ud"/>
+                            <constraint firstItem="Lis-Wk-9C7" firstAttribute="centerX" secondItem="Dyd-iX-g1N" secondAttribute="centerX" id="H3R-mQ-Qky"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0JK-uL-dC4" secondAttribute="trailing" id="Rhu-HX-ySQ"/>
                             <constraint firstItem="Lis-Wk-9C7" firstAttribute="top" secondItem="0JK-uL-dC4" secondAttribute="bottom" constant="200" id="Rq4-iD-zQa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Lis-Wk-9C7" secondAttribute="trailing" constant="10" id="ZvH-le-TNn"/>
