@@ -29,8 +29,8 @@
                                     <segue destination="cW3-d5-peU" kind="show" id="oeB-t1-MBB"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="82b-oM-WtZ">
-                                <rect key="frame" x="87.5" y="259" width="200" height="150"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="82b-oM-WtZ">
+                                <rect key="frame" x="87.5" y="200.5" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="pcq-Om-9d6"/>
                                     <constraint firstAttribute="width" constant="200" id="vxa-aU-Gwk"/>
@@ -39,8 +39,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" preservesSuperviewLayoutMargins="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPE-Zi-2eq">
-                                <rect key="frame" x="92" y="120" width="191" height="128.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPE-Zi-2eq">
+                                <rect key="frame" x="92" y="150" width="191" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -49,7 +49,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="82b-oM-WtZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6x5-TQ-POR"/>
+                            <constraint firstItem="82b-oM-WtZ" firstAttribute="top" secondItem="aPE-Zi-2eq" secondAttribute="bottom" constant="30" id="H4y-Ji-H40"/>
                             <constraint firstItem="82b-oM-WtZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W5V-HY-gjz"/>
+                            <constraint firstItem="aPE-Zi-2eq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="130" id="bAx-m6-gbt"/>
                             <constraint firstItem="aPE-Zi-2eq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rcd-1c-fYp"/>
                         </constraints>
                     </view>
@@ -73,13 +75,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JK-uL-dC4">
-                                <rect key="frame" x="166.5" y="120" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JK-uL-dC4">
+                                <rect key="frame" x="167" y="120" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lis-Wk-9C7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lis-Wk-9C7">
                                 <rect key="frame" x="172" y="341" width="31" height="126"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
@@ -89,7 +91,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wtp-68-YnG" firstAttribute="top" secondItem="Lis-Wk-9C7" secondAttribute="bottom" constant="200" id="J5S-1Z-VYd"/>
                             <constraint firstItem="0JK-uL-dC4" firstAttribute="centerX" secondItem="Dyd-iX-g1N" secondAttribute="centerX" id="cTy-zs-GEc"/>
+                            <constraint firstItem="Lis-Wk-9C7" firstAttribute="top" secondItem="0JK-uL-dC4" secondAttribute="bottom" constant="200" id="d4m-Ma-abt"/>
+                            <constraint firstItem="0JK-uL-dC4" firstAttribute="top" secondItem="flO-xQ-dyA" secondAttribute="bottom" constant="100" id="dZW-C3-BI4"/>
                             <constraint firstItem="Lis-Wk-9C7" firstAttribute="centerX" secondItem="Dyd-iX-g1N" secondAttribute="centerX" id="qV1-cG-jBp"/>
                         </constraints>
                     </view>
